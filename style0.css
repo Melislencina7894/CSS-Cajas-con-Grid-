@@ -1,0 +1,57 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  }
+
+/*.contenedor {
+  border: 5px solid #e1bee7;
+  background-color: #fff1ff;
+  display: grid;
+  grid-template-rows: 100px 200px;
+  grid-auto-columns: 100px;
+  grid-auto-flow: column;
+  gap: 40px;
+}
+
+.item {
+  border: 5px solid #00bcd4;
+  font-size: 4rem;
+}  me quedo con este ejercicio*/
+
+.header p {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.contenedor {
+  border: 5px solid #e1bee7;
+  /*  le saquè el color de fondo lila al espacio del borde background-color: #fff1ff;*/
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-auto-columns: 100px 100px;
+  /*la cable es el código siguiente para que me quede en 2 columnas*/
+  grid-auto-flow: column;
+  gap: 20px;
+  place-content: center;
+}
+
+  .item {
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    font-size: 2rem;
+    background-color: greenyellow;
+    width: 100px;
+    height: 100px;
+    color: white;
+  }
+  .item:nth-child(2),
+  .item:nth-child(5) {
+      background-color: rgb(0, 136, 52);
+    }
+
+  .item:nth-child(3),
+  .item:nth-child(6) {
+        background-color: green;
